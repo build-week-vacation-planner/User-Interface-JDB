@@ -40,4 +40,4 @@ Planning vacations sucks. There is so much time and effort spent wasted on thing
 
 ## Author
 
-[James Bishop]
+[James Bishop](https://github.com/jambis)
