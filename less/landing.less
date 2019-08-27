@@ -1,7 +1,7 @@
 .container {
   .cta {
+    position: relative;
     margin: 0 auto;
-
     background-image: url("/images/cta-image.jpg");
     background-repeat: no repeat;
     background-size: cover;
@@ -10,15 +10,24 @@
     height: 80vh;
 
     h1 {
+      margin: 0;
+      text-align: center;
     }
 
     .cta-text {
-      background: @fontred;
-      width: 40%;
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      background: rgba(white, 0.5);
+      width: 30%;
+      text-align: center;
       a {
         text-decoration: none;
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+        background-color: @fontred;
         font-size: 2.4rem;
-        color: black;
+        color: @grey;
       }
     }
   }
@@ -39,6 +48,7 @@
         margin: 3% 0;
         border: 2px black solid;
         border-radius: 3rem;
+        background-color: darken(white, 5%);
         box-shadow: 0.3rem 0.3rem 2rem grey;
         text-align: center;
 
@@ -46,7 +56,7 @@
           margin: 0;
           padding: 2%;
           border-radius: 2.8rem 2.8rem 0 0;
-          background-color: @fontred;
+          background-color: @teal;
         }
         .item-text {
           padding: 5% 5%;
@@ -83,6 +93,7 @@
         flex-direction: column;
         align-items: center;
         border: 2px black solid;
+        background-color: darken(white, 5%);
         border-radius: 3rem;
         box-shadow: 0.3rem 0.3rem 2rem grey;
         width: 20%;
@@ -103,7 +114,7 @@
         img {
           margin-top: -50px;
           border-radius: 50%;
-          border: 0.3rem solid white;
+          border: 0.8rem solid white;
           height: 100px;
           width: 100px;
         }
