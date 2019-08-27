@@ -346,7 +346,6 @@ p {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #55bdf0;
   margin: 0 auto;
   padding: 1% 5%;
 }
@@ -361,7 +360,44 @@ header nav {
   width: 50%;
 }
 header nav a {
+  color: #484848;
+  font-size: 2rem;
+  position: relative;
   text-decoration: none;
+  padding-bottom: 8px;
+}
+header nav a:before,
+header nav a:after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ef6863;
+}
+header nav a:before {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: transform 0 ease-out, opacity 0;
+}
+header nav a:after {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: transform 0.2s ease-out, opacity 0.2s;
+}
+header nav a:hover:before,
+header nav a:focus:before {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.2s ease-out, opacity 0.2s;
+}
+header nav a:hover:after,
+header nav a:focus:after {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 2s ease-out, opacity 2s;
+  transition: transform 0s 0.2s ease-out, opacity 0s 0.2s;
 }
 footer {
   padding: 0 5%;
@@ -373,8 +409,48 @@ footer nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 2rem;
   width: 50%;
+}
+footer nav a {
+  color: #484848;
+  font-size: 2rem;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+footer nav a:before,
+footer nav a:after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ef6863;
+}
+footer nav a:before {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: transform 0 ease-out, opacity 0;
+}
+footer nav a:after {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: transform 0.2s ease-out, opacity 0.2s;
+}
+footer nav a:hover:before,
+footer nav a:focus:before {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.2s ease-out, opacity 0.2s;
+}
+footer nav a:hover:after,
+footer nav a:focus:after {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 2s ease-out, opacity 2s;
+  transition: transform 0s 0.2s ease-out, opacity 0s 0.2s;
 }
 .container .cta {
   position: relative;
@@ -388,23 +464,38 @@ footer nav {
 }
 .container .cta h1 {
   margin: 0;
+  font-size: 7rem;
   text-align: center;
 }
 .container .cta .cta-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
   position: absolute;
-  top: 50%;
+  padding: 3% 3%;
+  top: 20%;
   left: 20%;
   background: rgba(255, 255, 255, 0.5);
-  width: 30%;
+  width: 35%;
   text-align: center;
+}
+.container .cta .cta-text h2 {
+  font-size: 4rem;
 }
 .container .cta .cta-text a {
   text-decoration: none;
-  border-radius: 1rem;
-  padding: 1rem 2rem;
   background-color: #ef6863;
-  font-size: 2.4rem;
   color: #484848;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-size: 2.4rem;
+}
+.container .cta .cta-text a:hover {
+  background-color: #ea3b35;
 }
 .container .features {
   margin: 5% 0;
@@ -415,8 +506,9 @@ footer nav {
 }
 .container .features .features-container {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 .container .features .features-container .feature-item {
   width: 27%;
@@ -431,7 +523,7 @@ footer nav {
   margin: 0;
   padding: 2%;
   border-radius: 2.8rem 2.8rem 0 0;
-  background-color: #378388;
+  background: linear-gradient(to right, #378388, #f2f2f2);
 }
 .container .features .features-container .feature-item .item-text {
   padding: 5% 5%;
@@ -458,8 +550,9 @@ footer nav {
 }
 .container .testimonials .testi-container .testi-item {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
   border: 2px black solid;
   background-color: #f2f2f2;
   border-radius: 3rem;
@@ -469,6 +562,7 @@ footer nav {
 .container .testimonials .testi-container .testi-item div {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 0 5% 5% 5%;
 }
 .container .testimonials .testi-container .testi-item div h4 {
@@ -489,14 +583,18 @@ footer nav {
 .container .testimonials .testi-container .testi-item p.name {
   font-weight: bold;
 }
+.intro {
+  text-align: center;
+  margin: 5%;
+}
 .team h2 {
   text-align: center;
 }
 .team .items-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 .team .items-container .items {
   width: 400px;
@@ -504,6 +602,7 @@ footer nav {
   padding: 0;
   box-shadow: 0.3rem 0.3rem 2rem grey;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 }
@@ -518,10 +617,10 @@ footer nav {
 }
 .team .items-container .items p.name {
   text-transform: uppercase;
-  background: linear-gradient(to right, #378388, #f2f2f2);
+  background: linear-gradient(to right, #ef6863, #f2f2f2);
   bottom: 15px;
 }
 .team .items-container .items p.role {
   bottom: -13px;
-  background: linear-gradient(to right, #ef6863, #f2f2f2);
+  background: linear-gradient(to right, #378388, #f2f2f2);
 }

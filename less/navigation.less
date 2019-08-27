@@ -1,20 +1,55 @@
 header {
   display: flex;
   justify-content: space-between;
-  background-color: @otherblue;
   margin: 0 auto;
   padding: 1% 5%;
+
   h2 {
     margin: 0;
   }
+
   nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    .flex(space-around, center);
     font-size: 2rem;
     width: 50%;
+
     a {
+      color: @grey;
+      font-size: 2rem;
+      position: relative;
       text-decoration: none;
+      padding-bottom: 8px;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: @fontred;
+      }
+
+      &:before {
+        .hoverAnimation(0, -8px, 0, ease-out);
+      }
+
+      &:after {
+        .hoverAnimation(0, 4px, 0.2s, ease-out);
+      }
+
+      &:hover,
+      &:focus {
+        &:before {
+          .hoverAnimation(1, 0, 0.2s, ease-out);
+        }
+
+        &:after {
+          .hoverAnimation(1, 0, 02s, ease-out);
+          transition: transform 0s 0.2s ease-out, opacity 0s 0.2s;
+        }
+      }
     }
   }
 }
