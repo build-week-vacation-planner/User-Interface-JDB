@@ -348,7 +348,10 @@ header {
   justify-content: space-between;
   background-color: #55bdf0;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 1% 5%;
+}
+header h2 {
+  margin: 0;
 }
 header nav {
   display: flex;
@@ -374,6 +377,7 @@ footer nav {
   width: 50%;
 }
 .container .cta {
+  position: relative;
   margin: 0 auto;
   background-image: url("/images/cta-image.jpg");
   background-repeat: no repeat;
@@ -382,14 +386,25 @@ footer nav {
   width: 100%;
   height: 80vh;
 }
+.container .cta h1 {
+  margin: 0;
+  text-align: center;
+}
 .container .cta .cta-text {
-  background: #ef6863;
-  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  background: rgba(255, 255, 255, 0.5);
+  width: 30%;
+  text-align: center;
 }
 .container .cta .cta-text a {
   text-decoration: none;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: #ef6863;
   font-size: 2.4rem;
-  color: black;
+  color: #484848;
 }
 .container .features {
   margin: 5% 0;
@@ -408,6 +423,7 @@ footer nav {
   margin: 3% 0;
   border: 2px black solid;
   border-radius: 3rem;
+  background-color: #f2f2f2;
   box-shadow: 0.3rem 0.3rem 2rem grey;
   text-align: center;
 }
@@ -415,7 +431,7 @@ footer nav {
   margin: 0;
   padding: 2%;
   border-radius: 2.8rem 2.8rem 0 0;
-  background-color: #ef6863;
+  background-color: #378388;
 }
 .container .features .features-container .feature-item .item-text {
   padding: 5% 5%;
@@ -445,6 +461,7 @@ footer nav {
   flex-direction: column;
   align-items: center;
   border: 2px black solid;
+  background-color: #f2f2f2;
   border-radius: 3rem;
   box-shadow: 0.3rem 0.3rem 2rem grey;
   width: 20%;
@@ -465,10 +482,46 @@ footer nav {
 .container .testimonials .testi-container .testi-item img {
   margin-top: -50px;
   border-radius: 50%;
-  border: 0.3rem solid white;
+  border: 0.8rem solid white;
   height: 100px;
   width: 100px;
 }
 .container .testimonials .testi-container .testi-item p.name {
   font-weight: bold;
+}
+.team h2 {
+  text-align: center;
+}
+.team .items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.team .items-container .items {
+  width: 400px;
+  margin: 2% 4%;
+  padding: 0;
+  box-shadow: 0.3rem 0.3rem 2rem grey;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.team .items-container .items p.name,
+.team .items-container .items p.role {
+  text-align: center;
+  z-index: 2;
+  margin: 0;
+  width: 400px;
+  padding: 2% 0;
+  background-color: #ef6863;
+}
+.team .items-container .items p.name {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #378388, #f2f2f2);
+  bottom: 15px;
+}
+.team .items-container .items p.role {
+  bottom: -13px;
+  background: linear-gradient(to right, #ef6863, #f2f2f2);
 }
