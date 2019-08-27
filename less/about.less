@@ -1,0 +1,42 @@
+.intro {
+  text-align: center;
+  margin: 5%;
+}
+.team {
+  h2 {
+    text-align: center;
+  }
+  .items-container {
+    .flex (space-evenly, center);
+    flex-wrap: wrap;
+
+    .items {
+      width: 400px;
+      margin: 2% 4%;
+      padding: 0;
+      box-shadow: 0.3rem 0.3rem 2rem grey;
+      .flex (@align: center);
+      flex-direction: column;
+      img {
+      }
+      p.name,
+      p.role {
+        text-align: center;
+        z-index: 2;
+        margin: 0;
+        width: 400px;
+        padding: 2% 0;
+        background-color: @fontred;
+      }
+      p.name {
+        text-transform: uppercase;
+        background: linear-gradient(to right, @fontred, darken(white, 5%));
+        bottom: 15px;
+      }
+      p.role {
+        bottom: -13px;
+        background: linear-gradient(to right, @teal, darken(white, 5%));
+      }
+    }
+  }
+}

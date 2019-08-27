@@ -1,0 +1,25 @@
+.flex (@justify: flex-start, @align: flex-start) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.aStyle(@widthLen, @heightLen) {
+  background-color: @fontred;
+  color: @grey;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: @widthLen @heightLen;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(@fontred, 10%);
+  }
+}
+
+.hoverAnimation(@opacity, @y, @duration, @easetype) {
+  opacity: @opacity;
+  transform: translateY(@y);
+  transition: transform @duration @easetype, opacity @duration;
+}
