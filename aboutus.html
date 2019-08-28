@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Vacation Planner</title>
   </head>
   <body>
@@ -18,7 +19,6 @@
         <nav>
           <a href="index.html">Home</a>
           <a href="">About Us</a>
-          <a href="">Contact</a>
           <a href="">Login</a>
         </nav>
       </header>
@@ -30,47 +30,47 @@
       <section class="team">
         <h2>Meet The Team!</h2>
         <div class="items-container">
-          <div class="items">
+          <div data-aos="zoom-out" data-aos-offset="200" class="items">
             <img src="/images/pm.png" alt="" />
             <p class="name">Tyler Thompson</p>
             <p class="role">Team Lead & Back End Developer</p>
           </div>
-          <div class="items">
+          <div data-aos="zoom-out" data-aos-offset="200" class="items">
             <img src="/images/frontend1.png" alt="" />
             <p class="name">Avni Patel Thompson</p>
             <p class="role">Front End Developer</p>
           </div>
-          <div class="items">
+          <div data-aos="zoom-out" data-aos-offset="200" class="items">
             <img src="/images/frontend2.png" alt="" />
             <p class="name">Connor C</p>
             <p class="role">Front End Developer</p>
           </div>
-          <div class="items">
+          <div data-aos="zoom-out" data-aos-offset="200" class="items">
             <img src="/images/frontend3.png" alt="" />
             <p class="name">Kenya Alston</p>
             <p class="role">Front End Developer</p>
           </div>
-          <div class="items">
+          <div data-aos="zoom-out" data-aos-offset="200" class="items">
             <img src="/images/frontend4.png" alt="" />
             <p class="name">Luis Mendes</p>
             <p class="role">Front End Developer</p>
           </div>
-          <div class="items">
+          <div data-aos="zoom-out" data-aos-offset="200" class="items">
             <img src="/images/frontend5.png" alt="" />
             <p class="name">LC Carrier</p>
             <p class="role">Front End Developer</p>
           </div>
-          <div class="items">
+          <div data-aos="zoom-out" data-aos-offset="200" class="items">
             <img src="/images/UI1.png" alt="" />
             <p class="name">Jeremy Rogel</p>
             <p class="role">Web UI Developer</p>
           </div>
-          <div class="items">
+          <div data-aos="zoom-out" data-aos-offset="200" class="items">
             <img src="/images/UI2.png" alt="" />
             <p class="name">Justin Brandley</p>
             <p class="role">Web UI Developer</p>
           </div>
-          <div class="items">
+          <div data-aos="zoom-out" data-aos-offset="200" class="items">
             <img src="/images/UI3.png" alt="" />
             <p class="name">James Bishop</p>
             <p class="role">Web UI Developer</p>
@@ -83,10 +83,13 @@
         <nav>
           <a href="index.html">Home</a>
           <a href="">About Us</a>
-          <a href="">Contact</a>
           <a href="">Login</a>
         </nav>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true });
+    </script>
   </body>
 </html>

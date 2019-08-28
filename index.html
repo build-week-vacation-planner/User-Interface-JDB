@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Vacation Planner</title>
   </head>
   <body>
@@ -18,8 +19,7 @@
         <nav>
           <a href="">Home</a>
           <a href="aboutus.html">About Us</a>
-          <a href="#">Contact</a>
-          <a href="#">Login</a>
+          <a href="">Login</a>
         </nav>
       </header>
 
@@ -34,7 +34,7 @@
       <section class="features">
         <h2>Every Feature You Ever Wanted</h2>
         <div class="features-container">
-          <div class="feature-item">
+          <div data-aos="fade-down" data-aos-offset="200" class="feature-item">
             <h3>Plan Your Travel</h3>
             <div class="item-text">
               <img src="./images/undraw_travel_plans_li01.svg" alt="" />
@@ -45,7 +45,7 @@
               </p>
             </div>
           </div>
-          <div class="feature-item">
+          <div data-aos="fade-down" data-aos-offset="200" class="feature-item">
             <h3>Brainstorm with Friends</h3>
             <div class="item-text">
               <img src="./images/undraw_Group_chat_unwm.svg" alt="" />
@@ -55,7 +55,7 @@
               </p>
             </div>
           </div>
-          <div class="feature-item">
+          <div data-aos="fade-down" data-aos-offset="200" class="feature-item">
             <h3>Destinations</h3>
             <div class="item-text">
               <img src="./images/undraw_sunlight_tn7t.svg" alt="" />
@@ -65,7 +65,7 @@
               </p>
             </div>
           </div>
-          <div class="feature-item">
+          <div data-aos="fade-down" data-aos-offset="200" class="feature-item">
             <h3>Stay On Schedule</h3>
             <div class="item-text">
               <img src="./images/undraw_schedule_pnbk.svg" alt="" />
@@ -74,7 +74,7 @@
               </p>
             </div>
           </div>
-          <div class="feature-item">
+          <div data-aos="fade-down" data-aos-offset="200" class="feature-item">
             <h3>What to do?</h3>
             <div class="item-text">
               <img src="./images/undraw_taking_notes_tjaf.svg" alt="" />
@@ -84,7 +84,7 @@
               </p>
             </div>
           </div>
-          <div class="feature-item">
+          <div data-aos="fade-down" data-aos-offset="200" class="feature-item">
             <h3>Create Memories</h3>
             <div class="item-text">
               <img src="./images/undraw_moment_to_remember_02gj.svg" alt="" />
@@ -99,42 +99,42 @@
       <section class="testimonials">
         <h3>See What Our Users Have To Say</h3>
         <div class="testi-container">
-          <div class="testi-item">
-            <img src="/images/jurica-koletic-7YVZYZeITc8-unsplash.jpg" alt="" />
-            <p class="name">John Smith</p>
+          <div data-aos="flip-up" data-aos-offset="200" class="testi-item">
+            <img src="/images/testi1.jpg" alt="" />
+            <p class="name">David Stephens</p>
             <div>
               <h4>"</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
-                sequi similique molestias quam. Temporibus ullam laboriosam,
-                veritatis facere adipisci quia, sed reprehenderit molestiae
-                numquam ducimus voluptatibus repellat laborum minima sapiente!
+                Hands down the best app to plan vacations. Clean UI, excellent
+                features and easy to use. I've never had this much fun while
+                planning for a trip with friends. I can't wait until we plan our
+                next trip.
               </p>
             </div>
           </div>
-          <div class="testi-item">
-            <img src="/images/jurica-koletic-7YVZYZeITc8-unsplash.jpg" alt="" />
-            <p class="name">John Smith</p>
+          <div data-aos="flip-up" data-aos-offset="200" class="testi-item">
+            <img src="/images/testi2.jpg" alt="" />
+            <p class="name">Jane Perkins</p>
             <div>
               <h4>"</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
-                sequi similique molestias quam. Temporibus ullam laboriosam,
-                veritatis facere adipisci quia, sed reprehenderit molestiae
-                numquam ducimus voluptatibus repellat laborum minima sapiente!
+                This app allowed my friends and I stay organized through-out the
+                whole planning process. We were able to brainstorm ideas for
+                activities during our trip, set dates and locations. This app is
+                so amazing, we are already planning our next trip.
               </p>
             </div>
           </div>
-          <div class="testi-item">
-            <img src="/images/jurica-koletic-7YVZYZeITc8-unsplash.jpg" alt="" />
-            <p class="name">John Smith</p>
+          <div data-aos="flip-up" data-aos-offset="200" class="testi-item">
+            <img src="/images/testi3.jpg" alt="" />
+            <p class="name">Desmond Blackwell</p>
             <div>
               <h4>"</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
-                sequi similique molestias quam. Temporibus ullam laboriosam,
-                veritatis facere adipisci quia, sed reprehenderit molestiae
-                numquam ducimus voluptatibus repellat laborum minima sapiente!
+                Wow! How did I ever plan for trips without Vacation Planner? I'm
+                ecstatic to have come across this app. Soon my friends and I
+                will be visiting the beaches of Cancun with a full list of fun
+                activities planned out.
               </p>
             </div>
           </div>
@@ -146,10 +146,13 @@
         <nav>
           <a href="">Home</a>
           <a href="aboutus.html">About Us</a>
-          <a href="">Contact</a>
           <a href="">Login</a>
         </nav>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true });
+    </script>
   </body>
 </html>
