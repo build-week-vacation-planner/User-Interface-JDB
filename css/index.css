@@ -481,7 +481,7 @@ footer nav a:focus:after {
 .container .cta {
   position: relative;
   margin: 0 auto;
-  padding-bottom: 70%;
+  padding-bottom: 50%;
   background-image: url("/images/cta-image.jpg");
   background-repeat: no repeat;
   background-size: cover;
@@ -525,6 +525,9 @@ footer nav a:focus:after {
   background-color: #ea3b35;
 }
 @media (max-width: 1075px) {
+  .container .cta {
+    padding-bottom: 60%;
+  }
   .container .cta h1 {
     font-size: 5.5rem;
   }
@@ -533,6 +536,9 @@ footer nav a:focus:after {
   }
 }
 @media (max-width: 850px) {
+  .container .cta {
+    padding-bottom: 70%;
+  }
   .container .cta h1 {
     font-size: 4.5rem;
   }
@@ -666,6 +672,10 @@ footer nav a:focus:after {
 .intro {
   text-align: center;
   margin: 5%;
+}
+.intro img {
+  width: 100%;
+  height: auto;
 }
 .team h2 {
   text-align: center;
