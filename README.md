@@ -4,7 +4,7 @@ Vacation Planner aims to help users eliminate the hassle of planning a vacation.
 
 Read More on the [Technical Design Document](https://docs.google.com/document/d/1yFfJ5_FH-15WMQaEHXUoSX8DCKcvnybIqZ5pLfFBdyw/)
 
-The marketing page of the application is deployed [here](https://loving-murdock-721926.netlify.com/index.html)
+The marketing page of the application is deployed [here](https://vacation-planner-web23.netlify.com/index.html)
 
 ## Motivation
 
