@@ -473,6 +473,7 @@ footer nav a:focus:after {
   footer {
     flex-direction: column-reverse;
     align-items: center;
+    padding-top: 2rem;
   }
   footer nav {
     width: 80%;
@@ -713,6 +714,7 @@ footer nav a:focus:after {
 }
 .team .items-container .items p.name {
   text-transform: uppercase;
+  font-weight: bold;
   background: linear-gradient(to right, #ef6863, #f2f2f2);
   bottom: 15px;
 }

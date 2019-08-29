@@ -2,7 +2,7 @@ footer {
   padding: 0 5%;
   display: flex;
   justify-content: space-between;
-  background-color: @teal;
+  background-color: @footerColor;
 
   nav {
     .flex(space-around, center);
@@ -10,7 +10,7 @@ footer {
     width: 50%;
 
     a {
-      color: @grey;
+      color: @fontColor;
       font-size: 2rem;
       position: relative;
       text-decoration: none;
@@ -24,7 +24,7 @@ footer {
         left: 0;
         right: 0;
         height: 2px;
-        background-color: @fontred;
+        background-color: @btnColor;
       }
 
       &:before {
@@ -52,6 +52,7 @@ footer {
   @media @tablet {
     flex-direction: column-reverse;
     align-items: center;
+    padding-top: 2rem;
 
     nav {
       width: 80%;
